@@ -1,5 +1,9 @@
 #!/bin/bash
 set -e
+set -x
+
+pwd
+ls -lhas
 
 mkdir -p releases/${INPUT_VERSION}
 ./scripts/changelog-as-json.sh > releases/${INPUT_VERSION}/commits.json
