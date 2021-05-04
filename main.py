@@ -5,7 +5,7 @@ import requests  # noqa We are just importing this to prove the dependency insta
 def main():
     version = os.environ["INPUT_VERSION"]
 
-    my_output = f"Hello {version}"
+    my_output = f"Version is {version}"
 
     print(f"::set-output name=version::{my_output}")
 
