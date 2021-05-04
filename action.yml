@@ -1,0 +1,13 @@
+name: "Generate release with custom changelog action"
+description: "Generate changelog with jira tasks ids in commit messages"
+author: "Sergey Lavrinenko"
+inputs:
+  version:
+    description: "Release version. When empty, minor version number increased"
+    required: false
+outputs:
+  version:
+    description: "Result version set"
+runs:
+  using: "docker"
+  image: "Dockerfile"
